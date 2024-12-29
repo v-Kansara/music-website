@@ -1,0 +1,299 @@
+/* General */
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.main {
+  background-color: #8d643d;
+}
+
+/* Headings */
+
+.heading-primary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  font-size: 3rem;
+  line-height: 1.05;
+  margin-bottom: 3rem;
+}
+
+.heading-secondary {
+  font-weight: 700;
+  color: #eee;
+  letter-spacing: -0.5px;
+  font-size: 3rem;
+  line-height: 1.05;
+  margin-bottom: 3rem;
+  margin-top: 0.6rem;
+  text-align: center;
+}
+
+.sub-heading {
+  font-weight: 600;
+  color: #eee;
+  letter-spacing: -0.5px;
+  font-size: 2.5rem;
+  line-height: 1.05;
+  margin-bottom: 1rem;
+  margin-top: 0.3rem;
+  text-align: center;
+}
+
+/* Navigation */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 4rem;
+  padding-left: 0.25rem;
+  padding: 0 0.8rem;
+  position: relative;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+.nav-main {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.nav-item:link,
+.nav-item:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.nav-item:hover,
+.nav-item:active {
+  color: #5c320f;
+}
+
+.nav-item {
+  text-decoration: none;
+  background:  no-repeat 0 100%;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 3px;
+  transition: background-size .5s ease;
+}
+
+.nav-item:hover, .nav-item:focus {
+  background-size: 100% 2px;
+}
+
+/* Home Section */
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 1.6rem 0 3rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 3.7rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.image__overlay {
+  position: relative;
+  top: -197px;
+  left: 0;
+  width: 100%;
+  height: 94.2%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+  backdrop-filter: blur(5px);
+}
+
+.image__overlay > * {
+  transform: translateY(0px);
+  transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+  opacity: 1;
+}
+
+.image__overlay:hover > * {
+  transform: translateY(0);
+}
+
+.image__title {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: -3rem;
+}
+
+.image__description {
+  font-size: 0.8rem;
+  margin-bottom: 0rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Indian vs. Western Section */
+
+.section-in-vs-west {
+  background-color: #b19279;
+  padding: 3rem 0 3rem 0;
+  border-top: 1px solid #eee;
+}
+
+.in-v-west {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: start;
+}
+
+.in-v-west-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #eee
+}
+
+.in-v-west-img {
+  width: 100%;
+}
+
+/* Instruments Section */
+
+.section-instruments {
+  background-color: #fdf2e9;
+  padding: 1.6rem 0 3rem 0;
+}
+
+.instruments {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.instruments-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 3.7rem;
+}
+
+.instruments-img-box {
+  margin: 0 auto;
+  padding: 0 0rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+/* Raaga Section */
+
+.section-raaga {
+  background-color: #fdf2e9;
+  padding: 1.6rem 0 3rem 0;
+}
+
+.raaga {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.raaga-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 3.7rem;
+  text-align: center;
+}
+
+/* Buttons */
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #5c320f;
+  color: #fdf2e9;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  box-shadow: inset 0 0 0 3px #3b2009;
+  background-color: #fdf2e9;
+  color: #3b2009;
+}
+
+.img-btn,
+.img-btn:link,
+.img-btn:visited {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-left: 7rem
+}
+
+.img-btn:hover,
+.img-btn:active {
+  transform: scale(1.1);
+}
+
+.img-btn {
+  overflow: hidden;
+}
